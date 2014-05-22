@@ -7,21 +7,14 @@
     "jquery": "2.0.*",
     "underscore": "~1.6.0",
     "bootstrap": "~3.1.1",
-    "bootstrap-modal": "~2.2.5",
     "flowtype": "*",
     "jquery-ui-scalebreaker": "git@github.com:salsita/jquery-ui-scalebreaker.git",
-    "seiyria-bootstrap-slider": "~3.1.0",
     "nouislider": "~6.2.0"
   },
   "devDependencies": [],
   "install": {
     "path": "vendor",
     "sources": {
-      "bootstrap-modal": [
-        "bower_components/bootstrap-modal/css/*",
-        "bower_components/bootstrap-modal/img/*",
-        "bower_components/bootstrap-modal/js/*"
-      ],
       "jquery": {
         "mapping": [
           {
