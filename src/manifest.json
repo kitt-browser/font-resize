@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "<%= name %>",
+  "description": "Displays words as other words.",
+  "version": "0.2.6",
+  "icons": {
+    "128": "img/icon.png"
+  },
+  "background": {
+    "scripts": [
+      "js/main.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+
+  "browser_action": {
+      "default_icon": {
+          "300": "img/icon.png"
+      }
+  },
+
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "contextMenus",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "img/*",
+    "notification.html",
+    "auth.html"
+  ]
+}

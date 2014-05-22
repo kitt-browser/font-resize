@@ -1,0 +1,44 @@
+{
+  "name": "font-size",
+  "version": "0.2.6",
+  "description": "Translate extension.",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kitt-browser/translate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kitt-browser/translate/issues"
+  },
+  "homepage": "https://github.com/kitt-browser/translate",
+  "devDependencies": {
+    "bower-installer": "^0.7.1",
+    "browserify": "^4.1.5",
+    "cssify": "^0.5.1",
+    "debug": "^0.8.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^2.1.0",
+    "grunt-bumpup": "^0.5.2",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-crx": "^0.3.3",
+    "grunt-exec": "^0.4.5",
+    "grunt-s3": "^0.2.0-alpha.3",
+    "grunt-usemin": "^2.1.1",
+    "uglifyify": "^2.1.1",
+    "watchify": "^0.6.4"
+  },
+  "dependencies": {
+    "jadeify": "^2.3.0",
+    "minilog": "^2.0.4"
+  }
+}
