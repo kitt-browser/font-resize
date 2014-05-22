@@ -1,21 +1,21 @@
 {
-  "name": "font-size",
+  "name": "Font-resize",
   "version": "0.2.6",
-  "description": "Translate extension.",
+  "description": "Font resize allows you to quickly resize fonts on a webpage.",
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/kitt-browser/translate.git"
+    "url": "git://github.com/kitt-browser/font-resize.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kitt-browser/translate/issues"
+    "url": "https://github.com/kitt-browser/font-resize/issues"
   },
-  "homepage": "https://github.com/kitt-browser/translate",
+  "homepage": "https://github.com/kitt-browser/font-resize",
   "devDependencies": {
     "bower-installer": "^0.7.1",
     "browserify": "^4.1.5",

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "<%= name %>",
-  "description": "Displays words as other words.",
+  "description": "<%= description %>",
   "version": "0.2.6",
   "icons": {
     "128": "img/icon.png"
