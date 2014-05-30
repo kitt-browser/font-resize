@@ -1,10 +1,8 @@
 ;(function() {
   "use strict";
 
-
   var $ = require('../vendor/jquery/jquery');
   var _ = require('../vendor/underscore/underscore');
-  require('../vendor/flowtype/flowtype');
 
   require('../vendor/jquery-ui-scalebreaker/jquery-ui-1.10.4.custom.min');
   require('../vendor/jquery-ui-scalebreaker/jq-scalebreaker.css');
@@ -18,15 +16,17 @@
   var _jQuery = $.noConflict(true);
 
 
-  (function ($) {
+  (function ($) { $(function() {
+
+    var body = document.getElementsByTagName('body');
+    var size = 11;
 
     var ratioLimits = {
       min: 0,
-      max: 80
+      max: 72
     };
 
     function showPopup() {
-      var ratio = (ratioLimits.min + ratioLimits.max) / 2;
 
       $('body').scalebreaker('show');
 
@@ -38,9 +38,8 @@
 
       var $slider = $('body').scalebreaker('getContentElement')
         .find(".scalebreaker-123-slider");
-      console.log('starting with ratio', ratio);
       $slider.noUiSlider({
-        start: [ratio],
+        start: [size],
         range: {
           'min': [ratioLimits.min],
           'max': [ratioLimits.max]
@@ -48,11 +47,11 @@
       });
 
       $slider.on('slide', function() {
-        ratio = $slider.val();
-        console.log('new font ratio', ratio);
-        $('body').flowtype({
-          fontRatio: (ratioLimits.max - ratio)
-        });
+        size = $slider.val();
+        console.log('new font size', size);
+        for (var i = 0; i < body.length; i++) {
+          body[i].style.fontSize = size + "pt";
+        }
       });
     }
 
@@ -72,6 +71,6 @@
 
 
 
-  })(_jQuery);
+  });})(_jQuery);
 
 })();
