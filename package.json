@@ -1,6 +1,6 @@
 {
   "name": "Font-resize",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "description": "Font resize allows you to quickly resize fonts on a webpage.",
   "private": "true",
   "scripts": {
