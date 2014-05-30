@@ -31,7 +31,7 @@
       $('body').scalebreaker('show');
 
       $('body').on('dialogHidden.jq-scalebreaker', function() {
-        setTimeout(function() {
+        window.setTimeout(function() {
           $('body').scalebreaker('destroy');
         }, 200);
       });
